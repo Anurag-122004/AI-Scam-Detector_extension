@@ -1,0 +1,24 @@
+2025-01-18 16:12:07,526 - INFO - Starting scam_detector.py
+2025-01-18 16:12:14,110 - INFO - URL: https://www.cuchd.in/, Prediction: Scam
+2025-01-18 16:15:48,695 - INFO - Starting scam_detector.py
+2025-01-18 16:15:55,815 - INFO - URL: https://www.cuchd.in/, Prediction: Legitimate
+2025-01-18 16:16:25,216 - INFO - Starting scam_detector.py
+2025-01-18 16:16:31,164 - INFO - URL: https://www.cuchd.in/, Prediction: Legitimate
+2025-01-18 16:17:16,948 - INFO - Starting scam_detector.py
+2025-01-18 16:17:22,608 - INFO - URL: https://www.amazon.in/, Prediction: Legitimate
+2025-01-18 16:17:41,190 - INFO - Starting scam_detector.py
+2025-01-18 16:17:46,686 - INFO - URL: https://internet.chlc3.com, Prediction: Scam
+2025-01-18 17:59:50,915 - INFO - Starting scam_detector.py
+2025-01-18 18:00:04,595 - INFO - URL: http://rigister-app-mps.com, Prediction: Scam
+2025-01-18 18:00:24,314 - INFO - Starting scam_detector.py
+2025-01-18 18:00:30,068 - INFO - URL: https://wellfound.com/login?after_sign_in=%2Fjobs%2Fhome, Prediction: Legitimate
+2025-01-18T12:45:23.789Z - Received URL for analysis: https://www.cuchd.in/
+2025-01-18T12:45:32.840Z - Python script result for 'https://www.cuchd.in/': The URL 'https://www.cuchd.in/' is likely legitimate.
+2025-01-18T12:46:32.432Z - Received URL for analysis: https://www.amazon.in/
+2025-01-18T12:46:41.474Z - Python script result for 'https://www.amazon.in/': The URL 'https://www.amazon.in/' is likely legitimate.
+2025-01-18T12:47:14.294Z - Received URL for analysis: http://rijgregeb.net/banks/Desjardins/index91484101498.php
+2025-01-18T12:47:22.590Z - Python script result for 'http://rijgregeb.net/banks/Desjardins/index91484101498.php': The URL 'http://rijgregeb.net/banks/Desjardins/index91484101498.php' is likely a scam.
+2025-01-18T13:13:49.645Z - Received URL for analysis: http://rijschoolhoorn.nl/de/capone
+2025-01-18T13:14:08.536Z - Python script result for 'http://rijschoolhoorn.nl/de/capone': The URL 'http://rijschoolhoorn.nl/de/capone' is likely a scam.
+2025-01-18T13:14:23.862Z - Received URL for analysis: https://www.amazon.in/
+2025-01-18T13:14:30.731Z - Python script result for 'https://www.amazon.in/': The URL 'https://www.amazon.in/' is likely legitimate.

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "AI Scam Detector",
+    "version": "1.0",
+    "description": "Blocks URLs present in the cleaned_phishing_dataset.csv file.",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "storage",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "./rules.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  title: AI Crypto Scam Detector API
+  description: This API allows users to analyze URLs for potential crypto scams.
+  version: 1.0.0
+  contact:
+    name: Anurag Kaushik
+    email: anuragofficial.wrk@gmail.com
+
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+
+paths:
+  /api/analyze:
+    post:
+      summary: Analyze a URL for potential scams
+      description: This endpoint accepts a URL and determines if it's associated with a crypto scam.
+      operationId: analyzeURL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/URLAnalysisRequest'
+      responses:
+        '200':
+          description: Successful response with analysis result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/URLAnalysisResponse'
+        '400':
+          description: Bad request (invalid input)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    URLAnalysisRequest:
+      type: object
+      properties:
+        url:
+          type: string
+          description: The URL to be analyzed
+          example: "https://suspicious-site.com"
+
+    URLAnalysisResponse:
+      type: object
+      properties:
+        url:
+          type: string
+          description: The analyzed URL
+        isScam:
+          type: boolean
+          description: Whether the URL is a scam
+          example: true
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message
+          example: "Invalid URL format"
